@@ -45,7 +45,7 @@
     "@vercel/analytics": "1.4.1",
     "@vercel/speed-insights": "1.1.0",
     "astro": "5.1.10",
-    "astro-typesafe-routes": "3.0.2",
+    "astro-typesafe-routes": "3.0.3",
     "class-variance-authority": "0.7.1",
     "clsx": "2.1.1",
     "cmdk": "1.0.4",
