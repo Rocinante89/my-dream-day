@@ -11,8 +11,14 @@ import typesafeRoutes from "astro-typesafe-routes";
 
 // https://astro.build/config
 export default defineConfig({
-  adapter: vercel(),
-  integrations: [react(), tailwind({
-    applyBaseStyles: false,
-  }), typesafeRoutes()],
+  adapter: vercel({
+    skewProtection: true,
+  }),
+  integrations: [
+    react(),
+    tailwind({
+      applyBaseStyles: false,
+    }),
+    typesafeRoutes(),
+  ],
 });
