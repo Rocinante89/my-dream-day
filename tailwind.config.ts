@@ -6,7 +6,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["Inter var", "Inter", "sans-serif"],
+        sans: ["Inter Variable", "sans-serif"],
       },
       borderRadius: {
         lg: "var(--radius)",
