@@ -23,9 +23,12 @@ const {
         <meta name="description" content={description} />
         <title>{title} | My Dream Day</title>
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <link rel="preconnect" href="https://rsms.me/" />
+        <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
         <Analytics />
     </head>
-    <body class="min-h-screen flex flex-col">
+    <body class="min-h-screen flex flex-col antialiased">
+        <div class="relative h-full w-full bg-slate-950"><div class="absolute bottom-0 left-[-20%] right-0 top-[-10%] h-[500px] w-[500px] rounded-full bg-[radial-gradient(circle_farthest-side,rgba(255,0,182,.15),rgba(255,255,255,0))]"></div><div class="absolute bottom-0 right-[-20%] top-[-10%] h-[500px] w-[500px] rounded-full bg-[radial-gradient(circle_farthest-side,rgba(255,0,182,.15),rgba(255,255,255,0))]"></div></div>
         <Header client:load />
         <main class="flex-1 ">
             <slot />
