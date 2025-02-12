@@ -1,16 +1,12 @@
 ---
+import { Home } from '@/components/home';
+import Layout from '../layouts/Layout.astro';
 import '@/styles/globals.css'
 
-import Layout from '../layouts/Layout.astro';
-import Link from 'astro-typesafe-routes/link';
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
-<Layout>
-	<h1>Home</h1>
-	<Link to="/about-us">About Us</Link>
-	<Link to="/products-and-services">Products and Services</Link>
-	<Link to="/contact-us">Contact Us</Link>
-	<Link to="/portfolio">Portfolio</Link>
+<Layout title="Home">
+	<Home client:load />
 </Layout>
