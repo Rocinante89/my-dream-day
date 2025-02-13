@@ -1,6 +1,7 @@
 import { CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { MagicCard } from "@/components/ui/magic-card"
 import { CheckCircle, Phone, Heart, Mail, Cookie, Wine, Camera, Sparkles } from "lucide-react"
+import { Button } from './ui/button'
 
 export const Services = () => {
     const services = [
@@ -64,7 +65,7 @@ export const Services = () => {
             </MagicCard>
 
             <h2 className="text-2xl font-semibold mb-4">Package Deals:</h2>
-            <div className="grid md:grid-cols-2 gap-8">
+            <div className="grid md:grid-cols-2 gap-8 mb-12">
                 {packages.map((pkg, index) => (
                     <MagicCard key={index}>
                         <CardHeader>
@@ -98,9 +99,12 @@ export const Services = () => {
                     </MagicCard>
                 ))}
             </div>
-            <p className="mt-8 text-center text-muted-foreground">
-                Church Décor packages starting from €500. Contact us for more information.
-            </p>
+            <section className="text-center mb-12">
+                <h2 className="text-2xl font-semibold mb-4">Church Décor packages starting from €500. Contact us for more information.</h2>
+                <Button asChild>
+                    <a href="/contact-us">Contact Us Today</a>
+                </Button>
+            </section>
         </div>
     )
 }

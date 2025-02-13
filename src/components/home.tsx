@@ -103,9 +103,9 @@ export const Home = () => {
                     All of our Packages are reasonably priced to suit any budget. We use the highest quality flowers and décor to
                     make your dream day a real life Pinterest Moment.
                 </p>
-                <a href="/contact-us">
-                    <Button>Contact Us Today</Button>
-                </a>
+                <Button asChild>
+                    <a href="/contact-us">Contact Us Today</a>
+                </Button>
             </section>
         </div>
     )
